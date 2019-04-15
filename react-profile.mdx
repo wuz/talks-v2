@@ -1,0 +1,79 @@
+export { default as theme } from './dank-neon';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { Notes } from 'mdx-deck'
+import { Head } from 'mdx-deck'
+
+<Head>
+  <title>My Presentation</title>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@jxnblk" />
+  <meta name="twitter:title" content="My Presentation" />
+  <meta name="twitter:description" content="A really great presentation" />
+  <meta name="twitter:image" content="https://example.com/card.png" />
+</Head>
+
+
+# Hi there!
+
+---
+
+# About Me
+
+---
+
+# Profiling Production React Apps
+
+---
+
+# What?
+
+---
+
+# [RFC](https://github.com/reactjs/rfcs/pull/51) && [Blog Post](https://reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html)
+
+---
+
+![Profiler screenshot](https://reactjs.org/static/start-profiling-bae8d10e17f06eeb8c512c91c0153cff-53c76.png)
+
+---
+
+# Allows you to get timings of components events
+
+---
+
+# What events?
+
+---
+
+# Mounts and updates!
+
+---
+
+# Let's look at an example!
+
+---
+
+#  [It takes a bit of setup for production](https://gist.github.com/bvaughn/25e6233aeb1b4f0cdb8d8366e54a3977)
+
+---
+
+<SyntaxHighlighter language='javascript' style={dark}>
+
+import React, { unstable_Profiler as ReactProfiler } from "react";
+
+const Profiled = ({ children }) => (
+  <ReactProfiler
+    id={"Profiler Identifier"}
+    onRender={handleProfiler}
+  >
+    {children}
+  </ReactProfiler>
+);
+
+</SyntaxHighlighter>
+
+---
+
+![Jeff goodbye](https://wuz.fyi/gifs/thats-our-show.gif)
+

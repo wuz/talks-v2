@@ -1,0 +1,15 @@
+{
+  "name": "talks",
+  "version": "1.0.0",
+  "description": "A collection of my talks",
+  "main": "index.js",
+  "author": "Conlin Durbin <sup@wuz.fyi>",
+  "license": "MIT",
+  "scripts": {
+    "start": "mdx-deck"
+  },
+  "dependencies": {
+    "mdx-deck": "^2.1.1",
+    "react-syntax-highlighter": "^10.2.1"
+  }
+}
