@@ -8,8 +8,14 @@
   "scripts": {
     "start": "mdx-deck"
   },
-  "dependencies": {
+  "devDependencies": {
+    "@upleveled/mdx-deck-code-surfer": "^0.6.13",
     "mdx-deck": "^2.1.1",
-    "react-syntax-highlighter": "^10.2.1"
+    "mdx-deck-live-code": "^1.0.1",
+    "raw-loader": "^2.0.0"
+  },
+  "dependencies": {
+    "mdx-deck-code-surfer": "^0.5.5",
+    "styled-components": "^4.2.0"
   }
 }
