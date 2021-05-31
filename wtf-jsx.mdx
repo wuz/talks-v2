@@ -1,0 +1,105 @@
+export { default as theme } from "./dank-neon";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { Notes } from "mdx-deck";
+import { Head } from "mdx-deck";
+import { Flex, Box } from "rebass";
+import styled from "styled-components";
+import Layout from "./Layout";
+import Img from "./Img";
+
+<Head>
+  <title>WTF JSX?</title>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@jxnblk" />
+  <meta name="twitter:title" content="WTF JSX?" />
+  <meta name="twitter:description" content="A really great presentation" />
+  <meta name="twitter:image" content="https://example.com/card.png" />
+</Head>
+
+# WTF JSX?
+
+---
+
+# About Me
+
+---
+
+# So what _is_ JSX?
+
+---
+
+<Layout>
+  <Flex>
+    <Box style={{ width: "50%", height: "100%" }}>
+      <Img src="https://media1.tenor.com/images/0159d6b28fcf591b4a3822e778e6e981/tenor.gif?itemid=7643631" />
+    </Box>
+    <Box p={3} style={{ width: "50%", height: "100%" }}>
+      <h1>The unholy return of XML?</h1>
+    </Box>
+  </Flex>
+</Layout>
+
+---
+
+# Just HTML embedded into JS code?
+
+---
+
+<Img src="https://media1.tenor.com/images/8cb8ef32aebbc36cfeb7f2686df36b37/tenor.gif" />
+
+# Something else?
+
+---
+
+# Let's talk about the DOM
+
+---
+
+<Layout>
+  <h1>Document Object Model</h1>
+
+  <Flex>
+    <Box>
+      {`<header class="mySiteHeader">
+      <h1>My Cool Site</h1>
+    </header>`}
+    </Box>
+    <Box />
+
+  </Flex>
+</Layout>
+
+---
+
+# Allows you to get timings of components events
+
+---
+
+# What events?
+
+---
+
+# Mounts and updates!
+
+---
+
+# Let's look at an example!
+
+---
+
+# [It takes a bit of setup for production](https://gist.github.com/bvaughn/25e6233aeb1b4f0cdb8d8366e54a3977)
+
+---
+
+![Jeff goodbye](https://wuz.fyi/gifs/thats-our-show.gif)
+
+//Notes
+
+https://kentcdodds.com/blog/rendering-a-function-with-react
+jamesknelson.com/learned-stop-worrying-love-jsx/
+https://twitter.com/pomber/status/991451257289273344
+https://codesandbox.io/embed/mjv84k1kn9
+https://xebia.com/blog/the-future-of-react-is-not-another-state-manager/
+https://hackernoon.com/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc
+https://medium.com/@ryanflorence/jsx-is-just-a-different-way-to-call-a-function-you-cant-return-two-functions-calls-87c4bc081664

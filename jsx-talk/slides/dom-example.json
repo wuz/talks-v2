@@ -1,0 +1,54 @@
+{
+  "element": "html",
+  "properties": {},
+  "children": [
+    {
+      "element": "head",
+      "properties": {},
+      "children": [
+        {
+          "element": "title",
+          "properties": {},
+          "children": ["WTF JSX?"]
+        },
+        {
+          "element": "meta",
+          "properties": { "charset": "UTF-8" },
+          "children": []
+        },
+        {
+          "element": "link",
+          "properties": { "rel": "stylsheet", "href": "./src/styles.css" },
+          "children": []
+        }
+      ]
+    },
+    {
+      "element": "body",
+      "properties": {},
+      "children": [
+        {
+          "element": "div",
+          "properties": {
+            "id": "app"
+          },
+          "children": [
+            {
+              "element": "header",
+              "properties": {
+                "class": "myCoolHeader"
+              },
+              "children": [
+                {
+                  "element": "h1",
+                  "properties": {},
+                  "children": ["My Rad Site"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
